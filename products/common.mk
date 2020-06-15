@@ -121,7 +121,8 @@ PRODUCT_COPY_FILES += \
 
 # Priv-app config
 PRODUCT_COPY_FILES += \
-    vendor/nitrogen/config/permissions/privapp-permissions-nitrogen.xml:system/etc/permissions/privapp-permissions-nitrogen.xml
+    vendor/nitrogen/config/permissions/privapp-permissions-nitrogen.xml:system/etc/permissions/privapp-permissions-nitrogen.xml \
+    vendor/nitrogen/prebuilt/common/etc/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineagehw.xml
 
 # Themes
 PRODUCT_PACKAGES += \
