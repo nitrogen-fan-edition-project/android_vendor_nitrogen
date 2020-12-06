@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
     QuickAccessWallet \
     Stk \
     Terminal \
+    Flipendo \
     CustomDoze
 
 # Filesystems tools
@@ -122,8 +123,9 @@ PRODUCT_COPY_FILES += \
 # Priv-app config
 PRODUCT_COPY_FILES += \
     vendor/nitrogen/config/permissions/privapp-permissions-nitrogen.xml:system/etc/permissions/privapp-permissions-nitrogen.xml \
-    vendor/nitrogen/prebuilt/common/etc/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
-
+    vendor/nitrogen/prebuilt/common/etc/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml \
+    vendor/nitrogen/config/permissions/pixel_experience_2020.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020.xml
+    
 # Themes
 PRODUCT_PACKAGES += \
     ThemePicker \
