@@ -89,6 +89,8 @@ include vendor/nitrogen/switch/switch.mk
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true \
     ro.iorapd.enable=true
 
 # Navbar
