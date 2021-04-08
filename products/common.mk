@@ -135,7 +135,11 @@ PRODUCT_PACKAGES += \
 # Boot animations
 $(call inherit-product-if-exists, vendor/nitrogen/products/bootanimation.mk)
 
+# Fonts
 $(call inherit-product, vendor/nitrogen/config/fonts.mk)
+
+# RRO Overlays
+$(call inherit-product, vendor/nitrogen/config/rro_overlays.mk)
 
 # Nitrogen OTA
 #$(call inherit-product-if-exists, vendor/nitrogen/products/ota.mk)
