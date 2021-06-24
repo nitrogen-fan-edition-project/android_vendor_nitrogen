@@ -151,5 +151,8 @@ $(call inherit-product, vendor/nitrogen/config/fonts.mk)
 # RRO Overlays
 $(call inherit-product, vendor/nitrogen/config/rro_overlays.mk)
 
+#AOSP Material Sounds
+$(call inherit-product, vendor/nitrogen/audio/audio.mk)
+
 # Nitrogen OTA
 #$(call inherit-product-if-exists, vendor/nitrogen/products/ota.mk)
