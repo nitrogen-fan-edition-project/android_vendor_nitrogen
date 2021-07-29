@@ -40,3 +40,14 @@ TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 
 # Soong value variables
 SOONG_CONFIG_nitrogenGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY)
+
+ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+SOONG_CONFIG_nitrogenVars += \
+    qcom_display_headers_namespace
+endif
+
+ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+SOONG_CONFIG_nitrogenVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
+else
+SOONG_CONFIG_nitrogenVars_qcom_display_headers_namespace := $(QCOM_SOONG_NAMESPACE)/display
+endif
